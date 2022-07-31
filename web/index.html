@@ -34,7 +34,7 @@
       if (liff.isInClient()) {
         getUserProfile()
       } else {
-        if (liff.isLoggedIn()) {
+        if (liff.isLoggedIn({redirectUri:"https://neno-tech.github.io/liff-url/web/mypage/"})) {
           getUserProfile()
           document.getElementById("btnLogIn").style.display = "none"
           document.getElementById("btnLogOut").style.display = "block"
